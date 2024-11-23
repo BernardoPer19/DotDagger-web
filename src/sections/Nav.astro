@@ -1,0 +1,39 @@
+<nav class="p-5 flex justify-between items-center bg-customColor2 dark:bg-customColor6  sticky top-0 z-10">
+  <div class="max-w-screen-xl mx-auto">
+    <!-- Logo -->
+
+    <!-- Menú para escritorio -->
+    <div class="hidden md:flex items-center space-x-6 text-white dark:text-gray-200">
+      <a href="/" class="hover:text-customColor4 dark:hover:text-gray-400 transition-colors duration-300 dark:text-customColor2">Home</a>
+      <a href="#about" class="hover:text-customColor4 dark:hover:text-gray-400 transition-colors duration-300 dark:text-customColor2">Sobre mí</a>
+      <a href="#intereces" class="hover:text-customColor4 dark:hover:text-gray-400 transition-colors duration-300 dark:text-customColor2">Intereses</a>
+      <a href="/contactPage" class="hover:text-customColor4 dark:hover:text-gray-400 transition-colors duration-300 px-4 py-2 bg-customColor3 rounded-lg text-white dark:bg-gray-700 ">Contacto</a>
+      <div class="flex justify-center items-center">
+        <label class="relative inline-block w-14 h-8">
+          <input type="checkbox" class="opacity-0 w-0 h-0 peer" id="dark-mode-toggle">
+          <span class="absolute cursor-pointer top-0 left-0 right-0 bottom-0 bg-gray-200 dark:bg-gray-700 rounded-full transition duration-400 peer-checked:bg-gray-800"></span>
+          <span class="absolute h-6 w-6 bg-gradient-to-r from-pink-500 to-orange-500 rounded-full top-1 left-1 transform transition duration-400 peer-checked:left-7 peer-checked:bg-gray-800 peer-checked:shadow-inner peer-checked:shadow-purple-400"></span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Botón de hamburguesa para móvil -->
+    <div class="md:hidden flex items-center">
+      <button id="hamburger-icon" class="text-white dark:text-gray-200">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+          <path fill-rule="evenodd" d="M4 5h16M4 12h16M4 19h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Menú móvil -->
+    <div id="mobile-menu" class="absolute top-0 right-0 w-full bg-customColor1 dark:bg-gray-900 hidden md:hidden">
+      <div class="flex flex-col items-center py-6 space-y-4 text-white dark:text-gray-200">
+        <a href="/" class="hover:text-customColor4 dark:hover:text-gray-400 transition-colors duration-300 dark:text-customColor2">Home</a>
+        <a href="#about" class="hover:text-customColor4 dark:hover:text-gray-400 transition-colors duration-300 dark:text-customColor2">Sobre mí</a>
+        <a href="#intereces" class="hover:text-customColor4 dark:hover:text-gray-400 transition-colors duration-300 dark:text-customColor2">Intereses</a>
+        <a href="/contactPage" class="hover:text-customColor4 dark:hover:text-gray-400 transition-colors duration-300 dark:text-customColor2">Contacto</a>
+      </div>
+    </div>
+  </div>
+</nav>
